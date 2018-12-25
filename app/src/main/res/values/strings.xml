@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TawangAdventure</string>
+    <string name="title_home">Home</string>
+    <string name="title_attractions">Attractions</string>
+    <string name="title_book">Book Now</string>
+    <string name="title_about">About</string>
+    <string name="welcome">Find Deals For Any Season!</string>
+    <string name="welcomeOne">From family-friendly resorts to mountain bikes, tents and much more!</string>
+    <string name="about">Tawang Adventure Group is committed making travel safe, fun, exciting and hassle-free</string>
+    <string name="name">Name</string>
+    <string name="nationality">Nationality</string>
+    <string name="phone">Phone</string>
+    <string name="paragraph">Tawang Adventure Group welcomes you and your family/friends to come and explore the beautiful land of Tawang-Arunachal Pradesh. Being a local tour agency and locally operated, this gives us a better understanding of the land and the culture of this beautiful place, thereby making it even easier to make sure you guys have an experience of a lifetime. We cater to all types of tours for every pocket, budget and taste, either for individual, groups or corporate clients. Before planning your next vacation, do let us know in advance so that we can plan your ideal tour with the best price.
+
+Tawang Adventure Group is one of the best tour operator recognised by Government of Arunachal Pradesh and is one of the finest in conducting Domestic tours in the region, also organises Trekking, alpine tour, culture tour, honeymoon tour, mountain bike, bird watching, paragliding, educational tour and mountaineering expedition.Remember, with us touring Tawang is much easier, simpler and always super fun!
+
+We are more interested towards building relationship across the globe through our host of services filled with the spirit of adventure at the very heart of nature. We remain leveraged to get continuous feedbacks from our “Guests” and contemporise to update services rendered and facilitate them forever with innovative features. We look forward towards creating a milestone with our continuous and sincere efforts.
+
+The Tawang Adventure Group Advantage
+
+The origins of TAG were rooted in 4 basic tenets that confront all of us travellers:
+
+Are we well informed of all our travel options?
+Have we had an enjoyable experience making our reservations?
+Are we confident we got the best price?
+Is it safe for me to provide credit card and other personal details to my travel planner?</string>
+    <string name="date">Date</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Submit</string>
+    <string name="homeOne">Welcome To Tawang Adventure Group</string>
+    <string name="homeTwo">We are glad you checked in!</string>
+    <string name="homeThree">Welcome To Tawang Adventure Group</string>
+    <string name="homeFour">Tawang Adventure Group welcomes you and your family/friends to come and explore the beautiful land of Tawang-Arunachal Pradesh. Being a local tour agency and locally operated,  this gives us a better understanding of the land and the culture of this beautiful place, thereby making it even easier to make sure you guys have an experience of a lifetime. We cater to all types of tours for every pocket, budget and taste, either for individual, groups or corporate clients. Before planning your next vacation, do let us know in advance so that we can plan your ideal tour with the best price. Remember, with us touring Tawang is much easier, simpler and always super fun!</string>
+    <string name="spinner_title">Select Users</string>
+    <string name="homeFive">Top Rated Tours</string>
+    <string name="signup">Don\'t have account? Sign Up</string>
+</resources>
