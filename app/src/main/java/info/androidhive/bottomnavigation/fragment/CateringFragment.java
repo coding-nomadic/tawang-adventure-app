@@ -3,31 +3,29 @@ package info.androidhive.bottomnavigation.fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
 import info.androidhive.bottomnavigation.R;
 import info.androidhive.bottomnavigation.helper.InternetChecker;
 import info.androidhive.bottomnavigation.helper.NoInternetActivity;
 
-public class AboutFragment extends Fragment {
-    InternetChecker internetChecker=InternetChecker.INSTANCE;
+public class CateringFragment extends Fragment {
     public WebView mWebView;
-    public final static String URL="https://himalayanmomos.com/about-us";
-    public AboutFragment() {
+    InternetChecker internetChecker=InternetChecker.INSTANCE;
+    public final static String URL="https://himalayanmomos.com/catering-menu";
+    public CateringFragment() {
     }
-    public static AboutFragment newInstance(String param1, String param2) {
-        AboutFragment fragment = new AboutFragment();
+    public static CateringFragment newInstance(String param1, String param2) {
+        CateringFragment fragment = new CateringFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -52,8 +50,8 @@ public class AboutFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-            View view = inflater.inflate(R.layout.fragment_about, container, false);
-            mWebView = (WebView) view.findViewById(R.id.webViewAbout);
+            View view=inflater.inflate(R.layout.fragment_catering, container, false);
+            mWebView = (WebView) view.findViewById(R.id.webViewCatering);
             mWebView.setWebViewClient(new WebViewClient() {
                 @Override
                 public boolean shouldOverrideUrlLoading(final WebView view, final String url) {
@@ -61,12 +59,14 @@ public class AboutFragment extends Fragment {
                 }
                 @Override
                 public void onPageStarted(final WebView view, final String url, final Bitmap favicon) {
+                    //pb_per.setVisibility(View.VISIBLE);
                     super.onPageStarted(view, url, favicon);
                     mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none'; "+" var head = document.getElementsByClassName('x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-1b c1-1c c1-1d c1-1e c1-1f c1-1g c1-b c1-c c1-1h c1-1i c1-1j c1-1k c1-1l c1-d c1-e x-d-ux')[0].style.display='none';"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none';"+"})()");
                     //mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('fusion-header')[0].style.display='none'; "+" var head = document.getElementsByClassName('fusion-contact-info')[0].style.display='none';"+"var head = document.getElementsByClassName('fusion-main-menu')[0].style.display='none';"+"})()");
                 }
                 @Override
                 public void onPageFinished(final WebView view, final String url) {
+                    //pb_per.setVisibility(View.GONE);
                     super.onPageFinished(view, url);
                     mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none'; "+" var head = document.getElementsByClassName('x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-1b c1-1c c1-1d c1-1e c1-1f c1-1g c1-b c1-c c1-1h c1-1i c1-1j c1-1k c1-1l c1-d c1-e x-d-ux')[0].style.display='none';"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none';"+"})()");
                     //mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('fusion-header')[0].style.display='none'; "+" var head = document.getElementsByClassName('fusion-contact-info')[0].style.display='none';"+"var head = document.getElementsByClassName('fusion-main-menu')[0].style.display='none';"+"})()"); // Enable Javascript
@@ -78,7 +78,6 @@ public class AboutFragment extends Fragment {
             mWebView.loadUrl(URL);
             WebSettings webSettings = mWebView.getSettings();
             webSettings.setJavaScriptEnabled(true);
-        return view;
+            return view;
     }
-
 }

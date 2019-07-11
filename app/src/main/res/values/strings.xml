@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">TawangAdventure</string>
+    <string name="app_name">Himalayan Mo:Mo</string>
     <string name="title_home">Home</string>
-    <string name="title_attractions">Attractions</string>
-    <string name="title_book">Book Now</string>
-    <string name="title_about">About</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_catering">Catering US</string>
+    <string name="title_about">About Us</string>
+    <string name="title_contact">Contact Us</string>
     <string name="welcome">Find Deals For Any Season!</string>
     <string name="welcomeOne">From family-friendly resorts to mountain bikes, tents and much more!</string>
     <string name="about">Tawang Adventure Group is committed making travel safe, fun, exciting and hassle-free</string>

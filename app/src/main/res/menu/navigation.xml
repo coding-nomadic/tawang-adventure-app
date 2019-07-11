@@ -2,23 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_shop"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/ic_store_white_24dp"
         android:title="@string/title_home" />
-
     <item
-        android:id="@+id/navigation_gifts"
-        android:icon="@drawable/ic_card_giftcard_white_24dp"
-        android:title="@string/title_attractions" />
-
-    <item
-        android:id="@+id/navigation_cart"
-        android:icon="@drawable/ic_shopping_cart_white_24dp"
-        android:title="@string/title_book" />
-
-    <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_person_white_24dp"
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/ic_group_black_24dp"
         android:title="@string/title_about" />
 
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/ic_local_dining_black_24dp"
+        android:title="@string/title_menu" />
+
+    <item
+        android:id="@+id/navigation_catering"
+        android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
+        android:title="@string/title_catering" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="@string/title_contact" />
 </menu>

@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="info.androidhive.bottomnavigation.fragment.AttractionFragment">
+    tools:context="info.androidhive.bottomnavigation.fragment.ContactFragment">
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webViewAttraction"
+        android:id="@+id/webViewContact"
         android:scrollbarAlwaysDrawVerticalTrack="true"/>
 </FrameLayout>

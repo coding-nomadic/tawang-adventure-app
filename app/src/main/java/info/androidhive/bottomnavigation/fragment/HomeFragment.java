@@ -37,7 +37,7 @@ public class HomeFragment extends Fragment {
     private static final String TAG = HomeFragment.class.getSimpleName();
     InternetChecker internetChecker=InternetChecker.INSTANCE;
     public WebView mWebView;
-    public final static String URL="http://www.tawangadventuregroup.com/";
+    public final static String URL="https://himalayanmomos.com/";
     private RecyclerView recyclerView;
     public HomeFragment() {
     }
@@ -78,13 +78,15 @@ public class HomeFragment extends Fragment {
                 public void onPageStarted(final WebView view, final String url, final Bitmap favicon) {
                     //pb_per.setVisibility(View.VISIBLE);
                     super.onPageStarted(view, url, favicon);
-                    mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('fusion-header')[0].style.display='none'; "+" var head = document.getElementsByClassName('fusion-contact-info')[0].style.display='none';"+"var head = document.getElementsByClassName('fusion-main-menu')[0].style.display='none';"+"})()");
+                    mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none'; "+" var head = document.getElementsByClassName('x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-1b c1-1c c1-1d c1-1e c1-1f c1-1g c1-b c1-c c1-1h c1-1i c1-1j c1-1k c1-1l c1-d c1-e x-d-ux')[0].style.display='none';"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none';"+"})()");
                 }
                 @Override
                 public void onPageFinished(final WebView view, final String url) {
                     //pb_per.setVisibility(View.GONE);
                     super.onPageFinished(view, url);
-                    mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('fusion-header')[0].style.display='none'; "+" var head = document.getElementsByClassName('fusion-contact-info')[0].style.display='none';"+"var head = document.getElementsByClassName('fusion-main-menu')[0].style.display='none';"+"})()"); // Enable Javascript
+                    mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none'; "+" var head = document.getElementsByClassName('x-el x-el-div c1-1 c1-2 c1-18 c1-19 c1-1a c1-1b c1-1c c1-1d c1-1e c1-1f c1-1g c1-b c1-c c1-1h c1-1i c1-1j c1-1k c1-1l c1-d c1-e x-d-ux')[0].style.display='none';"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none';"+"})()");
+                    //mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none'; "+" var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none';"+"var head = document.getElementsByClassName('x-el x-el-nav c1-1 c1-2 c1-x c1-y c1-b c1-c c1-d c1-e x-d-ux')[0].style.display='none';"+"})()");
+                    //mWebView.loadUrl("javascript:(function(){"+"var head = document.getElementsByClassName('fusion-header')[0].style.display='none'; "+" var head = document.getElementsByClassName('fusion-contact-info')[0].style.display='none';"+"var head = document.getElementsByClassName('fusion-main-menu')[0].style.display='none';"+"})()"); // Enable Javascript
                 }
             });
             mWebView.setInitialScale(1);

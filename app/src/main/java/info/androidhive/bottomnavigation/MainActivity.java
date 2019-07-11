@@ -1,6 +1,5 @@
 package info.androidhive.bottomnavigation;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -9,14 +8,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
-import info.androidhive.bottomnavigation.fragment.BookFragment;
-import info.androidhive.bottomnavigation.fragment.AttractionFragment;
+import info.androidhive.bottomnavigation.fragment.CateringFragment;
+import info.androidhive.bottomnavigation.fragment.ContactFragment;
+import info.androidhive.bottomnavigation.fragment.MenuFragment;
 import info.androidhive.bottomnavigation.fragment.AboutFragment;
 import info.androidhive.bottomnavigation.fragment.HomeFragment;
 import info.androidhive.bottomnavigation.helper.BottomNavigationBehavior;
-import info.androidhive.bottomnavigation.helper.NoInternetActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,24 +41,29 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
             switch (item.getItemId()) {
-                case R.id.navigation_shop:
+                case R.id.navigation_home:
                     toolbar.setTitle("Home");
                     fragment = new HomeFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_gifts:
-                    toolbar.setTitle("Attraction");
-                    fragment = new AttractionFragment();
+                case R.id.navigation_menu:
+                    toolbar.setTitle("Menu");
+                    fragment = new MenuFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_cart:
-                    toolbar.setTitle("Book Now");
-                    fragment = new BookFragment();
+                case R.id.navigation_catering:
+                    toolbar.setTitle("Catering Menu");
+                    fragment = new CateringFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_profile:
-                    toolbar.setTitle("About");
+                case R.id.navigation_about:
+                    toolbar.setTitle("About Us");
                     fragment = new AboutFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.navigation_contact:
+                    toolbar.setTitle("Contact Us");
+                    fragment = new ContactFragment();
                     loadFragment(fragment);
                     return true;
             }
